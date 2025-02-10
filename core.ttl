@@ -1,0 +1,319 @@
+@prefix : <https://triplydb.com/ColinMeerveld/fablab#> .
+@prefix fl: <https://triplydb.com/ColinMeerveld/fablab#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix metadata: <http://topbraid.org/metadata#> .
+@base <https://triplydb.com/ColinMeerveld/fablab> .
+
+<https://triplydb.com/ColinMeerveld/fablab> rdf:type owl:Ontology ;
+                                             rdfs:comment "an ontology for public digital values that relates architectural principles and concrete applications" ;
+                                             rdfs:label "An public digital value ontology" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://triplydb.com/ColinMeerveld/fablab#hasApplication
+fl:hasApplication rdf:type owl:ObjectProperty ;
+                  rdfs:domain fl:Outcome ;
+                  rdfs:range fl:Application ;
+                  rdfs:label "has application"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#has_goal
+fl:has_goal rdf:type owl:ObjectProperty ;
+            rdfs:domain fl:Principle ;
+            rdfs:range fl:Outcome ;
+            rdfs:label "has outcome"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#is_associoted_with
+fl:is_associoted_with rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty ;
+                      rdfs:domain fl:Outcome ;
+                      rdfs:range fl:Value ;
+                      rdfs:label "is associoted with"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://triplydb.com/ColinMeerveld/fablab#icon
+fl:icon rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://triplydb.com/ColinMeerveld/fablab#Application
+fl:Application rdf:type owl:Class ;
+               rdfs:subClassOf owl:Thing ;
+               rdfs:comment "An example implementation of an outcome" ;
+               rdfs:label "Application"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#Outcome
+fl:Outcome rdf:type owl:Class ;
+           rdfs:comment "An outcome represent an end result that has been achieved" ;
+           rdfs:label "Outcome" .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#Principle
+fl:Principle rdf:type owl:Class ;
+             rdfs:subClassOf owl:Thing ;
+             rdfs:comment "An architectural rule or guideline for designing a system that ensure public values" ;
+             rdfs:label "Principle"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#Value
+fl:Value rdf:type owl:Class ;
+         rdfs:comment "a public value" ;
+         rdfs:label "Value"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://triplydb.com/ColinMeerveld/fablab#Citizens_are_able_to_contribute_to_the_digital_world
+fl:Citizens_are_able_to_contribute_to_the_digital_world rdf:type owl:NamedIndividual ,
+                                                                 fl:Principle ;
+                                                        fl:has_goal fl:Citizens_contribute_to_open_hard-_and_software ,
+                                                                    fl:Citizens_promote_the_use_of_open_formats ;
+                                                        rdfs:label "Citizens are able to contribute to the digital world"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#Citizens_contribute_to_open_hard-_and_software
+fl:Citizens_contribute_to_open_hard-_and_software rdf:type owl:NamedIndividual ,
+                                                           fl:Outcome ;
+                                                  fl:hasApplication fl:Use_Git_to_issue_a_feature_request ;
+                                                  fl:is_associoted_with fl:independency ;
+                                                  rdfs:label "Citizens contribute to open hard- and software"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#Citizens_make_use_of_federated_services
+fl:Citizens_make_use_of_federated_services rdf:type owl:NamedIndividual ,
+                                                    fl:Outcome ;
+                                           fl:hasApplication fl:Use_Masterdon_for_social_networking ;
+                                           fl:is_associoted_with fl:independency ;
+                                           rdfs:label "Citizens make use of federated services"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#Citizens_make_use_of_services_that_protect_their_personal_data
+fl:Citizens_make_use_of_services_that_protect_their_personal_data rdf:type owl:NamedIndividual ,
+                                                                           fl:Outcome ;
+                                                                  fl:hasApplication fl:Use_bitwarden_as_password_manager ;
+                                                                  fl:is_associoted_with fl:security ;
+                                                                  rdfs:label "Citizens make use of services that protect their personal data"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#Citizens_promote_the_use_of_open_formats
+fl:Citizens_promote_the_use_of_open_formats rdf:type owl:NamedIndividual ,
+                                                     fl:Outcome ;
+                                            fl:hasApplication fl:Share_documents_in_OpenDocument_format ;
+                                            fl:is_associoted_with fl:involvement ;
+                                            rdfs:label "Citizens promote the use of open formats"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#Citizens_understand_the_downside_of_digital_reliance
+fl:Citizens_understand_the_downside_of_digital_reliance rdf:type owl:NamedIndividual ,
+                                                                 fl:Outcome ;
+                                                        fl:hasApplication fl:Read_public_stack ,
+                                                                          fl:Understand_teh_phrase_Public_money_Public_code ,
+                                                                          fl:Watch_Bert_Huberts_talk_on_digital_autonomy ;
+                                                        fl:is_associoted_with fl:independency ;
+                                                        rdfs:label "Citizens understand the downside of digital reliance"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#Contol
+fl:Contol rdf:type owl:NamedIndividual ,
+                   fl:Principle ;
+          fl:has_goal fl:Citizens_make_use_of_federated_services ,
+                      fl:Citizens_understand_the_downside_of_digital_reliance ,
+                      fl:Promote_Linux_as_OS ;
+          rdfs:comment "Citizens and business owners must be able to view and retrieve the data the government holds about them and have it corrected where necessary. They must also be able to share data easily way if they want to. Also peaple should make theit=r own choices on digital assets such as which hard- or software they use" ;
+          rdfs:label "Citizens are in control of their own data and digital assets"@en ,
+                     "Regie"@nl ;
+          rdfs:seeAlso "https://www.digitaleoverheid.nl/wp-content/uploads/sites/8/2024/02/Geactualiseerde-werkagenda.pdf" ,
+                       "https://www.nldigitalgovernment.nl/overview/digitalisation-policy/value-driven-digitalisation-work-agenda/3-everyone-will-have-control-over-their-digital-lives/" .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#Cotizens_are_aware_of_sustainable_service_providers
+fl:Cotizens_are_aware_of_sustainable_service_providers rdf:type owl:NamedIndividual ,
+                                                                fl:Outcome ;
+                                                       fl:hasApplication fl:Use_Cardano_as_crypto_currency ,
+                                                                         fl:Use_Posteo_as_email_provider ;
+                                                       fl:is_associoted_with fl:sustainability ;
+                                                       rdfs:label "Citizens make use of sustainable service providers"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#Inclusion
+fl:Inclusion rdf:type owl:NamedIndividual ,
+                      fl:Principle ;
+             rdfs:comment "Everyone must be able to participate in digital life. This primarily comes from sufficient skills and knowledge. Unfortunately, a large number of children and adults still struggle to use social media consciously, critically and actively. In addition their are many citizens with a function disability which must have the same rights to partipate" ;
+             rdfs:label "Citizens are able to participate in a digital life"@en ,
+                        "Meedoen"@nl ;
+             rdfs:seeAlso "https://www.digitaleoverheid.nl/wp-content/uploads/sites/8/2024/02/Geactualiseerde-werkagenda.pdf" ,
+                          "https://www.nldigitalgovernment.nl/overview/digitalisation-policy/value-driven-digitalisation-work-agenda/1-everyone-will-be-able-to-participate-in-the-digital-age/" ,
+                          "https://www.w3.org/WAI/" .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#Promote_Linux_as_OS
+fl:Promote_Linux_as_OS rdf:type owl:NamedIndividual ,
+                                fl:Outcome ;
+                       fl:hasApplication fl:Use_Masterdon_for_social_networking ,
+                                         fl:Use_bitwarden_as_password_manager ,
+                                         fl:linux_as_os ;
+                       fl:is_associoted_with fl:independency ;
+                       rdfs:label "Citizens make use of open hard- and software"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#Promote_a_privacy_friendly_search_engine
+fl:Promote_a_privacy_friendly_search_engine rdf:type owl:NamedIndividual ,
+                                                     fl:Outcome ;
+                                            fl:hasApplication fl:Use_DuckDuckGo_as_search_engine ,
+                                                              fl:Use_Masterdon_for_social_networking ;
+                                            fl:is_associoted_with fl:privacy ;
+                                            rdfs:label "Citizens make use of privacy friendly digital services"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#Read_public_stack
+fl:Read_public_stack rdf:type owl:NamedIndividual ,
+                              fl:Application ;
+                     rdfs:label "Understand the public stack by reading publickstack.net"@en ;
+                     rdfs:seeAlso "https://publicstack.net/" .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#Share_documents_in_OpenDocument_format
+fl:Share_documents_in_OpenDocument_format rdf:type owl:NamedIndividual ,
+                                                   fl:Application ;
+                                          rdfs:label "Use OpenDocument as file format"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#Trust
+fl:Trust rdf:type owl:NamedIndividual ,
+                  fl:Principle ;
+         fl:has_goal fl:Promote_a_privacy_friendly_search_engine ;
+         rdfs:comment "Everyone must be able to trust that public values such as security and privacy are safeguarded in the digital world." ;
+         rdfs:label "Citizens could trust the digital world"@en ,
+                    "Vertrouwen"@nl ;
+         rdfs:seeAlso "https://www.digitaleoverheid.nl/wp-content/uploads/sites/8/2024/02/Geactualiseerde-werkagenda.pdf" .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#Understand_teh_phrase_Public_money_Public_code
+fl:Understand_teh_phrase_Public_money_Public_code rdf:type owl:NamedIndividual ,
+                                                           fl:Application ;
+                                                  rdfs:label "Understand the phrase 'public money public code' by reading publiccode.eu"@en ;
+                                                  rdfs:seeAlso "https://publiccode.eu" .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#Use_Cardano_as_crypto_currency
+fl:Use_Cardano_as_crypto_currency rdf:type owl:NamedIndividual ,
+                                           fl:Application ;
+                                  fl:icon "https://triplydb.com/ColinMeerveld/fablab/assets/67a9dbf6edcb361fb29d445d" ;
+                                  rdfs:label "Use Cardano as crypto currency"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#Use_DuckDuckGo_as_search_engine
+fl:Use_DuckDuckGo_as_search_engine rdf:type owl:NamedIndividual ,
+                                            fl:Application ;
+                                   fl:hasApplication fl:Use_bitwarden_as_password_manager ;
+                                   fl:icon "https://triplydb.com/ColinMeerveld/fablab/assets/67a9dc41edcb361fb29d693e" ;
+                                   rdfs:label "Use DuckDuckGo as search engine"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#Use_Git_to_issue_a_feature_request
+fl:Use_Git_to_issue_a_feature_request rdf:type owl:NamedIndividual ,
+                                               fl:Application ;
+                                      fl:icon "https://triplydb.com/ColinMeerveld/fablab/assets/67a9dcd0edcb361fb29db20d" ;
+                                      rdfs:label "Use Git to issue a feature request"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#Use_Masterdon_for_social_networking
+fl:Use_Masterdon_for_social_networking rdf:type owl:NamedIndividual ,
+                                                fl:Application ;
+                                       fl:icon "https://triplydb.com/ColinMeerveld/fablab/assets/67a9dcfeedcb361fb29dc7cf" ;
+                                       rdfs:label "Use Masterdon for social networking"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#Use_Posteo_as_email_provider
+fl:Use_Posteo_as_email_provider rdf:type owl:NamedIndividual ,
+                                         fl:Application ;
+                                fl:has_goal fl:Cotizens_are_aware_of_sustainable_service_providers ;
+                                fl:icon "https://triplydb.com/ColinMeerveld/fablab/assets/67a9dd2eedcb361fb29dde5f" ;
+                                rdfs:label "Use Posteo as email provider"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#Use_bitwarden_as_password_manager
+fl:Use_bitwarden_as_password_manager rdf:type owl:NamedIndividual ,
+                                              fl:Application ;
+                                     fl:icon "https://triplydb.com/ColinMeerveld/fablab/assets/67a9dd99edcb361fb29e0a90" ;
+                                     rdfs:label "Use bitwarden as password manager"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#Watch_Bert_Huberts_talk_on_digital_autonomy
+fl:Watch_Bert_Huberts_talk_on_digital_autonomy rdf:type owl:NamedIndividual ,
+                                                        fl:Application ;
+                                               rdfs:label "Understand 'digital autonomy' by watching Berts Huberts talk"@en ;
+                                               rdfs:seeAlso "https://conference.publicspaces.net/session/digital-autonomy" .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#independency
+fl:independency rdf:type owl:NamedIndividual ,
+                         fl:Value ;
+                rdfs:label "Independency"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#involvement
+fl:involvement rdf:type owl:NamedIndividual ,
+                        fl:Value ;
+               rdfs:label "Involvement"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#linux_as_os
+fl:linux_as_os rdf:type owl:NamedIndividual ,
+                        fl:Application ;
+               fl:icon "https://triplydb.com/ColinMeerveld/fablab/assets/67a9dd5aedcb361fb29df021" ;
+               rdfs:label "Use Ubuntu as operating system"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#non-discrimination
+fl:non-discrimination rdf:type owl:NamedIndividual ,
+                               fl:Value ;
+                      rdfs:label "Non-discrimination"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#privacy
+fl:privacy rdf:type owl:NamedIndividual ,
+                    fl:Value ;
+           rdfs:label "Privacy"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#responsibility
+fl:responsibility rdf:type owl:NamedIndividual ,
+                           fl:Principle ;
+                  fl:has_goal fl:Cotizens_are_aware_of_sustainable_service_providers ;
+                  rdfs:label "Citizens are able to make responsible choices"@en ,
+                             "Verantwoordelijkheid"@nl .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#security
+fl:security rdf:type owl:NamedIndividual ,
+                     fl:Value ;
+            rdfs:label "Security"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#sustainability
+fl:sustainability rdf:type owl:NamedIndividual ,
+                           fl:Value ;
+                  rdfs:label "Sustainability"@en .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
