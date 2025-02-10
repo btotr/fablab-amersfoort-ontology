@@ -8,9 +8,8 @@ Within Fablab amersfoort we have a strong belief in public digital values like p
 - Outcomes (The outcome when we apply the principles)
 - Applications (Concrete examples for individuals to be aligned with the values)
 
-The knowledge base could be found on [triplydb|https://triplydb.com/ColinMeerveld/fablab/]
-You could use [Yasgui|https://docs.triply.cc/yasgui/] to make some interactive applications. 
-
+The knowledge base could be found on [triplydb](https://triplydb.com/ColinMeerveld/fablab/)
+You could use [Yasgui](https://docs.triply.cc/yasgui/) to make some interactive applications. 
 Some examples are provides in the query section.
 
-
+![yasgui](https://github.com/user-attachments/assets/a60def18-4bd3-478c-a228-45a9dda05b2c)
