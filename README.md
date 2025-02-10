@@ -6,7 +6,7 @@ Within Fablab amersfoort we have a strong belief in public digital values like p
 - values (The public values itself)
 - Principles (what are the architectural rules or guidelines to enable those values)
 - Outcomes (The outcome when we apply the principles)
-- Applications (Concrete examples for individuals to be aligned with the values)
+- Applications (Praktical applications for individuals, inspired by [skilltree](https://github.com/sjpiper145/makerskilltree))
 
 The knowledge base could be found on [triplydb](https://triplydb.com/ColinMeerveld/fablab/)
 You could use [Yasgui](https://docs.triply.cc/yasgui/) to make some interactive applications. 
