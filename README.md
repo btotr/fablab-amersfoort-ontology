@@ -8,7 +8,7 @@ The ontology is based 4 main concepts:
 - [values](https://triplydb.com/ColinMeerveld/-/queries/Query-5/1) (Our digital values)
 - [Principles](https://triplydb.com/ColinMeerveld/-/queries/Query/1) (what are the architectural rules or guidelines to enable those values)
 - [Outcomes](https://triplydb.com/ColinMeerveld/-/queries/Query-6/1) (The outcome when we apply the principles)
-- [Applications](https://triplydb.com/ColinMeerveld/-/queries/Query-7/1) (Praktical applications for individuals, inspired by [skilltree](https://github.com/sjpiper145/makerskilltree))
+- [Applications](https://triplydb.com/ColinMeerveld/-/queries/Query-7/1) (Practical applications for individuals, inspired by [skilltree](https://github.com/sjpiper145/makerskilltree))
 
 The knowledge base could be found on [triplydb](https://triplydb.com/ColinMeerveld/fablab/).
 You could use [Yasgui](https://docs.triply.cc/yasgui/) to make some interactive applications.
