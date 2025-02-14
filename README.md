@@ -12,7 +12,7 @@ The ontology is based on 4 main concepts:
 
 The knowledge base could be found on [triplydb](https://triplydb.com/ColinMeerveld/fablab/).
 You could use [Yasgui](https://docs.triply.cc/yasgui/) to make some interactive applications.
-Some examples are provides in the query section.\
+Some examples are provides in the [query section](https://triplydb.com/ColinMeerveld/-/queries).\
 \
 ![yasgui](https://github.com/user-attachments/assets/a60def18-4bd3-478c-a228-45a9dda05b2c)
 
