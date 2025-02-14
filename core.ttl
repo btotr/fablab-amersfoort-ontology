@@ -374,8 +374,8 @@ fl:u4 rdf:type owl:NamedIndividual ,
 ###  https://triplydb.com/ColinMeerveld/fablab#u5
 fl:u5 rdf:type owl:NamedIndividual ,
                fl:Application ;
-      rdfs:label "Understand what an open data means by reading the open data handbook"@en ;
-      rdfs:seeAlso "https://opendatahandbook.org/glossary/en/terms/open-format/"@en .
+      rdfs:label "Understand what an open data means by reading opendefinition.org"@en ;
+      rdfs:seeAlso "https://opendefinition.org/od/2.1/en/"@en .
 
 
 ###  https://triplydb.com/ColinMeerveld/fablab#u6
