@@ -14,7 +14,7 @@ The knowledge base could be found on [triplydb](https://triplydb.com/ColinMeerve
 You could use [Yasgui](https://docs.triply.cc/yasgui/) to make some interactive applications.
 Some examples are provides in the [query section](https://triplydb.com/ColinMeerveld/-/queries).\
 \
-![yasgui](https://github.com/user-attachments/assets/a60def18-4bd3-478c-a228-45a9dda05b2c)
+![yasgui-s](https://github.com/user-attachments/assets/00e16d65-3dd4-4054-b34a-941e10ef5fef)
 
 [^1]: [https://en.wikipedia.org/wiki/Fab_lab](https://en.wikipedia.org/wiki/Fab_lab)
 [^2]: [https://en.wikipedia.org/wiki/Grassroots](https://en.wikipedia.org/wiki/Grassroots)
