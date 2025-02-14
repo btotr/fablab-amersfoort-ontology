@@ -27,23 +27,23 @@ fl:hasApplication rdf:type owl:ObjectProperty ,
                   rdfs:label "has application"@en .
 
 
-###  https://triplydb.com/ColinMeerveld/fablab#has_goal
-fl:has_goal rdf:type owl:ObjectProperty ,
-                     owl:AsymmetricProperty ,
-                     owl:IrreflexiveProperty ;
-            rdfs:domain fl:Principle ;
-            rdfs:range fl:Outcome ;
-            rdfs:label "has outcome"@en .
+###  https://triplydb.com/ColinMeerveld/fablab#hasOutcome
+fl:hasOutcome rdf:type owl:ObjectProperty ,
+                       owl:AsymmetricProperty ,
+                       owl:IrreflexiveProperty ;
+              rdfs:domain fl:Principle ;
+              rdfs:range fl:Outcome ;
+              rdfs:label "has outcome"@en .
 
 
-###  https://triplydb.com/ColinMeerveld/fablab#is_associoted_with
-fl:is_associoted_with rdf:type owl:ObjectProperty ;
-                      rdfs:subPropertyOf owl:topObjectProperty ;
-                      rdf:type owl:AsymmetricProperty ,
-                               owl:IrreflexiveProperty ;
-                      rdfs:domain fl:Outcome ;
-                      rdfs:range fl:Value ;
-                      rdfs:label "is associated with"@en .
+###  https://triplydb.com/ColinMeerveld/fablab#isAssociatedWith
+fl:isAssociatedWith rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdf:type owl:AsymmetricProperty ,
+                             owl:IrreflexiveProperty ;
+                    rdfs:domain fl:Outcome ;
+                    rdfs:range fl:Value ;
+                    rdfs:label "is associated with"@en .
 
 
 #################################################################
@@ -91,8 +91,8 @@ fl:Value rdf:type owl:Class ;
 ###  https://triplydb.com/ColinMeerveld/fablab#Citizens_are_able_to_contribute_to_the_digital_world
 fl:Citizens_are_able_to_contribute_to_the_digital_world rdf:type owl:NamedIndividual ,
                                                                  fl:Principle ;
-                                                        fl:has_goal fl:Citizens_contribute_to_open_hard-_and_software ,
-                                                                    fl:Citizens_promote_the_use_of_open_formats ;
+                                                        fl:hasOutcome fl:Citizens_contribute_to_open_hard-_and_software ,
+                                                                      fl:Citizens_promote_the_use_of_open_formats ;
                                                         rdfs:label "We contribute to the community"@en .
 
 
@@ -101,7 +101,7 @@ fl:Citizens_contribute_to_open_hard-_and_software rdf:type owl:NamedIndividual ,
                                                            fl:Outcome ;
                                                   fl:hasApplication fl:Use_GIT_to_report_an_issue ,
                                                                     fl:Use_Git_to_issue_a_feature_request ;
-                                                  fl:is_associoted_with fl:independency ;
+                                                  fl:isAssociatedWith fl:independency ;
                                                   rdfs:label "Members contribute to open hard- and software"@en .
 
 
@@ -109,7 +109,7 @@ fl:Citizens_contribute_to_open_hard-_and_software rdf:type owl:NamedIndividual ,
 fl:Citizens_make_use_of_federated_services rdf:type owl:NamedIndividual ,
                                                     fl:Outcome ;
                                            fl:hasApplication fl:Use_Masterdon_for_social_networking ;
-                                           fl:is_associoted_with fl:independency ;
+                                           fl:isAssociatedWith fl:independency ;
                                            rdfs:label "Members make use of federated services"@en .
 
 
@@ -118,7 +118,7 @@ fl:Citizens_make_use_of_services_that_protect_their_personal_data rdf:type owl:N
                                                                            fl:Outcome ;
                                                                   fl:hasApplication fl:Use_PGP_email_encryption ,
                                                                                     fl:Use_bitwarden_as_password_manager ;
-                                                                  fl:is_associoted_with fl:security ;
+                                                                  fl:isAssociatedWith fl:security ;
                                                                   rdfs:label "Members make use of services that protect their personal data"@en .
 
 
@@ -126,7 +126,7 @@ fl:Citizens_make_use_of_services_that_protect_their_personal_data rdf:type owl:N
 fl:Citizens_promote_the_use_of_open_formats rdf:type owl:NamedIndividual ,
                                                      fl:Outcome ;
                                             fl:hasApplication fl:Share_documents_in_OpenDocument_format ;
-                                            fl:is_associoted_with fl:involvement ;
+                                            fl:isAssociatedWith fl:involvement ;
                                             rdfs:label "Members make  use of open file formats"@en .
 
 
@@ -139,16 +139,16 @@ fl:Citizens_understand_the_downside_of_digital_reliance rdf:type owl:NamedIndivi
                                                                           fl:Understand_what_an_open_file_format_means_by_reading_the_open_data_handbook ,
                                                                           fl:Understand_what_open_source_means_by_reading_opensource.org ,
                                                                           fl:Watch_Bert_Huberts_talk_on_digital_autonomy ;
-                                                        fl:is_associoted_with fl:independency ;
+                                                        fl:isAssociatedWith fl:independency ;
                                                         rdfs:label "Members understand the downside of digital reliance"@en .
 
 
 ###  https://triplydb.com/ColinMeerveld/fablab#Contol
 fl:Contol rdf:type owl:NamedIndividual ,
                    fl:Principle ;
-          fl:has_goal fl:Citizens_make_use_of_federated_services ,
-                      fl:Citizens_understand_the_downside_of_digital_reliance ,
-                      fl:Promote_Linux_as_OS ;
+          fl:hasOutcome fl:Citizens_make_use_of_federated_services ,
+                        fl:Citizens_understand_the_downside_of_digital_reliance ,
+                        fl:Promote_Linux_as_OS ;
           rdfs:comment "Citizens and business owners must be able to view and retrieve the data the government holds about them and have it corrected where necessary. They must also be able to share data easily way if they want to. Also peaple should make theit=r own choices on digital assets such as which hard- or software they use" ;
           rdfs:label "Regie"@nl ,
                      "We are in control of our data and digital assets"@en ;
@@ -161,7 +161,7 @@ fl:Cotizens_are_aware_of_sustainable_service_providers rdf:type owl:NamedIndivid
                                                                 fl:Outcome ;
                                                        fl:hasApplication fl:Use_Cardano_as_crypto_currency ,
                                                                          fl:Use_Posteo_as_email_provider ;
-                                                       fl:is_associoted_with fl:sustainability ;
+                                                       fl:isAssociatedWith fl:sustainability ;
                                                        rdfs:label "Members make use of sustainable service providers"@en .
 
 
@@ -186,7 +186,7 @@ fl:Promote_Linux_as_OS rdf:type owl:NamedIndividual ,
                                          fl:Use_bitwarden_as_password_manager ,
                                          fl:Use_openstreetmaps_for_map_viewing ,
                                          fl:linux_as_os ;
-                       fl:is_associoted_with fl:independency ;
+                       fl:isAssociatedWith fl:independency ;
                        rdfs:label "Members make use of open hard- and software"@en .
 
 
@@ -195,7 +195,7 @@ fl:Promote_a_privacy_friendly_search_engine rdf:type owl:NamedIndividual ,
                                                      fl:Outcome ;
                                             fl:hasApplication fl:Use_DuckDuckGo_as_search_engine ,
                                                               fl:Use_Masterdon_for_social_networking ;
-                                            fl:is_associoted_with fl:privacy ;
+                                            fl:isAssociatedWith fl:privacy ;
                                             rdfs:label "Members make use of privacy friendly digital services"@en .
 
 
@@ -215,7 +215,7 @@ fl:Share_documents_in_OpenDocument_format rdf:type owl:NamedIndividual ,
 ###  https://triplydb.com/ColinMeerveld/fablab#Trust
 fl:Trust rdf:type owl:NamedIndividual ,
                   fl:Principle ;
-         fl:has_goal fl:Promote_a_privacy_friendly_search_engine ;
+         fl:hasOutcome fl:Promote_a_privacy_friendly_search_engine ;
          rdfs:comment "Everyone must be able to trust that public values such as security and privacy are safeguarded in the digital world." ;
          rdfs:label "Vertrouwen"@nl ,
                     "We use a trustworthy digital environment"@en ;
@@ -381,7 +381,7 @@ fl:privacy rdf:type owl:NamedIndividual ,
 ###  https://triplydb.com/ColinMeerveld/fablab#responsibility
 fl:responsibility rdf:type owl:NamedIndividual ,
                            fl:Principle ;
-                  fl:has_goal fl:Cotizens_are_aware_of_sustainable_service_providers ;
+                  fl:hasOutcome fl:Cotizens_are_aware_of_sustainable_service_providers ;
                   rdfs:label "Verantwoordelijkheid"@nl ,
                              "We make responsible choices"@en .
 
