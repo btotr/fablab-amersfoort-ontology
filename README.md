@@ -1,6 +1,6 @@
 # Fablab Amersfoort Ontology
 
-At Fablab Amersfoort have a small-scale workshop offering digital fabrication to make almost anything[^1]. We believe in grassroots movements which encourage community members to contribute by taking responsibility and action for their community [^2]. Digitalization helps to bring communities together [^3] but should based on some common digital values. 
+At Fablab Amersfoort we have a small-scale workshop offering digital fabrication to make almost anything[^1]. We believe in grassroots movements which encourage community members to contribute by taking responsibility and action for their community [^2]. Digitalization helps to bring communities together [^3] but should based on some common digital values. 
 
 This ontology [^4] helps to relate those values by underlaying architectural principles (rules) which helps making changes within a starfish organization [^5].
 The ontology is based on 4 main concepts:
