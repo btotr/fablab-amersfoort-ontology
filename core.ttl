@@ -88,38 +88,6 @@ fl:Value rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-###  https://triplydb.com/ColinMeerveld/fablab#Citizens_are_able_to_contribute_to_the_digital_world
-fl:Citizens_are_able_to_contribute_to_the_digital_world rdf:type owl:NamedIndividual ,
-                                                                 fl:Principle ;
-                                                        fl:hasOutcome fl:O1 ,
-                                                                      fl:O2 ;
-                                                        rdfs:label "We contribute to the community"@en .
-
-
-###  https://triplydb.com/ColinMeerveld/fablab#Contol
-fl:Contol rdf:type owl:NamedIndividual ,
-                   fl:Principle ;
-          fl:hasOutcome fl:O3 ,
-                        fl:O4 ,
-                        fl:O8 ;
-          rdfs:comment "Citizens and business owners must be able to view and retrieve the data the government holds about them and have it corrected where necessary. They must also be able to share data easily way if they want to. Also peaple should make theit=r own choices on digital assets such as which hard- or software they use" ;
-          rdfs:label "Regie"@nl ,
-                     "We are in control of our data and digital assets"@en ;
-          rdfs:seeAlso "https://www.digitaleoverheid.nl/wp-content/uploads/sites/8/2024/02/Geactualiseerde-werkagenda.pdf" ,
-                       "https://www.nldigitalgovernment.nl/overview/digitalisation-policy/value-driven-digitalisation-work-agenda/3-everyone-will-have-control-over-their-digital-lives/" .
-
-
-###  https://triplydb.com/ColinMeerveld/fablab#Inclusion
-fl:Inclusion rdf:type owl:NamedIndividual ,
-                      fl:Principle ;
-             rdfs:comment "Everyone must be able to participate in digital life. This primarily comes from sufficient skills and knowledge. Unfortunately, a large number of children and adults still struggle to use social media consciously, critically and actively. In addition their are many citizens with a function disability which must have the same rights to partipate" ;
-             rdfs:label "Meedoen"@nl ,
-                        "We make sure that anyone could participate in the community"@en ;
-             rdfs:seeAlso "https://www.digitaleoverheid.nl/wp-content/uploads/sites/8/2024/02/Geactualiseerde-werkagenda.pdf" ,
-                          "https://www.nldigitalgovernment.nl/overview/digitalisation-policy/value-driven-digitalisation-work-agenda/1-everyone-will-be-able-to-participate-in-the-digital-age/" ,
-                          "https://www.w3.org/WAI/" .
-
-
 ###  https://triplydb.com/ColinMeerveld/fablab#O1
 fl:O1 rdf:type owl:NamedIndividual ,
                fl:Outcome ;
@@ -199,6 +167,56 @@ fl:O8 rdf:type owl:NamedIndividual ,
       rdfs:label "Members understand the downside of digital reliance"@en .
 
 
+###  https://triplydb.com/ColinMeerveld/fablab#P1
+fl:P1 rdf:type owl:NamedIndividual ,
+               fl:Principle ;
+      fl:hasOutcome fl:O3 ,
+                    fl:O4 ,
+                    fl:O8 ;
+      rdfs:comment "Citizens and business owners must be able to view and retrieve the data the government holds about them and have it corrected where necessary. They must also be able to share data easily way if they want to. Also peaple should make theit=r own choices on digital assets such as which hard- or software they use" ;
+      rdfs:label "Regie"@nl ,
+                 "We are in control of our data and digital assets"@en ;
+      rdfs:seeAlso "https://www.digitaleoverheid.nl/wp-content/uploads/sites/8/2024/02/Geactualiseerde-werkagenda.pdf" ,
+                   "https://www.nldigitalgovernment.nl/overview/digitalisation-policy/value-driven-digitalisation-work-agenda/3-everyone-will-have-control-over-their-digital-lives/" .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#P2
+fl:P2 rdf:type owl:NamedIndividual ,
+               fl:Principle ;
+      fl:hasOutcome fl:O1 ,
+                    fl:O2 ;
+      rdfs:label "We contribute to the community"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#P3
+fl:P3 rdf:type owl:NamedIndividual ,
+               fl:Principle ;
+      fl:hasOutcome fl:O7 ;
+      rdfs:label "Verantwoordelijkheid"@nl ,
+                 "We make responsible choices"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#P4
+fl:P4 rdf:type owl:NamedIndividual ,
+               fl:Principle ;
+      rdfs:comment "Everyone must be able to participate in digital life. This primarily comes from sufficient skills and knowledge. Unfortunately, a large number of children and adults still struggle to use social media consciously, critically and actively. In addition their are many citizens with a function disability which must have the same rights to partipate" ;
+      rdfs:label "Meedoen"@nl ,
+                 "We make sure that anyone could participate in the community"@en ;
+      rdfs:seeAlso "https://www.digitaleoverheid.nl/wp-content/uploads/sites/8/2024/02/Geactualiseerde-werkagenda.pdf" ,
+                   "https://www.nldigitalgovernment.nl/overview/digitalisation-policy/value-driven-digitalisation-work-agenda/1-everyone-will-be-able-to-participate-in-the-digital-age/" ,
+                   "https://www.w3.org/WAI/" .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#P5
+fl:P5 rdf:type owl:NamedIndividual ,
+               fl:Principle ;
+      fl:hasOutcome fl:O5 ;
+      rdfs:comment "Everyone must be able to trust that public values such as security and privacy are safeguarded in the digital world." ;
+      rdfs:label "Vertrouwen"@nl ,
+                 "We use a trustworthy digital environment"@en ;
+      rdfs:seeAlso "https://www.digitaleoverheid.nl/wp-content/uploads/sites/8/2024/02/Geactualiseerde-werkagenda.pdf" .
+
+
 ###  https://triplydb.com/ColinMeerveld/fablab#Read_public_stack
 fl:Read_public_stack rdf:type owl:NamedIndividual ,
                               fl:Application ;
@@ -210,16 +228,6 @@ fl:Read_public_stack rdf:type owl:NamedIndividual ,
 fl:Share_documents_in_OpenDocument_format rdf:type owl:NamedIndividual ,
                                                    fl:Application ;
                                           rdfs:label "Use OpenDocument for office applications"@en .
-
-
-###  https://triplydb.com/ColinMeerveld/fablab#Trust
-fl:Trust rdf:type owl:NamedIndividual ,
-                  fl:Principle ;
-         fl:hasOutcome fl:O5 ;
-         rdfs:comment "Everyone must be able to trust that public values such as security and privacy are safeguarded in the digital world." ;
-         rdfs:label "Vertrouwen"@nl ,
-                    "We use a trustworthy digital environment"@en ;
-         rdfs:seeAlso "https://www.digitaleoverheid.nl/wp-content/uploads/sites/8/2024/02/Geactualiseerde-werkagenda.pdf" .
 
 
 ###  https://triplydb.com/ColinMeerveld/fablab#Understand_teh_phrase_Public_money_Public_code
@@ -376,14 +384,6 @@ fl:non-discrimination rdf:type owl:NamedIndividual ,
 fl:privacy rdf:type owl:NamedIndividual ,
                     fl:Value ;
            rdfs:label "Privacy"@en .
-
-
-###  https://triplydb.com/ColinMeerveld/fablab#responsibility
-fl:responsibility rdf:type owl:NamedIndividual ,
-                           fl:Principle ;
-                  fl:hasOutcome fl:O7 ;
-                  rdfs:label "Verantwoordelijkheid"@nl ,
-                             "We make responsible choices"@en .
 
 
 ###  https://triplydb.com/ColinMeerveld/fablab#security
