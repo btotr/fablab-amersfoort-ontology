@@ -91,8 +91,8 @@ fl:Value rdf:type owl:Class ;
 ###  https://triplydb.com/ColinMeerveld/fablab#O1
 fl:O1 rdf:type owl:NamedIndividual ,
                fl:Outcome ;
-      fl:hasApplication fl:Use_GIT_to_report_an_issue ,
-                        fl:Use_Git_to_issue_a_feature_request ;
+      fl:hasApplication fl:u13 ,
+                        fl:u22 ;
       fl:isAssociatedWith fl:independency ;
       rdfs:label "Members contribute to open hard- and software"@en .
 
@@ -100,7 +100,7 @@ fl:O1 rdf:type owl:NamedIndividual ,
 ###  https://triplydb.com/ColinMeerveld/fablab#O2
 fl:O2 rdf:type owl:NamedIndividual ,
                fl:Outcome ;
-      fl:hasApplication fl:Share_documents_in_OpenDocument_format ;
+      fl:hasApplication fl:u16 ;
       fl:isAssociatedWith fl:involvement ;
       rdfs:label "Members make  use of open file formats"@en .
 
@@ -108,7 +108,7 @@ fl:O2 rdf:type owl:NamedIndividual ,
 ###  https://triplydb.com/ColinMeerveld/fablab#O3
 fl:O3 rdf:type owl:NamedIndividual ,
                fl:Outcome ;
-      fl:hasApplication fl:Use_Masterdon_for_social_networking ;
+      fl:hasApplication fl:u14 ;
       fl:isAssociatedWith fl:independency ;
       rdfs:label "Members make use of federated services"@en .
 
@@ -116,13 +116,14 @@ fl:O3 rdf:type owl:NamedIndividual ,
 ###  https://triplydb.com/ColinMeerveld/fablab#O4
 fl:O4 rdf:type owl:NamedIndividual ,
                fl:Outcome ;
-      fl:hasApplication fl:Use_Element_for_messaging ,
-                        fl:Use_LibreOffice_for_office_work ,
-                        fl:Use_Masterdon_for_social_networking ,
-                        fl:Use_OsmAnd_for_navigation ,
-                        fl:Use_bitwarden_as_password_manager ,
-                        fl:Use_openstreetmaps_for_map_viewing ,
-                        fl:linux_as_os ;
+      fl:hasApplication fl:u11 ,
+                        fl:u12 ,
+                        fl:u13 ,
+                        fl:u14 ,
+                        fl:u17 ,
+                        fl:u18 ,
+                        fl:u21 ,
+                        fl:u8 ;
       fl:isAssociatedWith fl:independency ;
       rdfs:label "Members make use of open hard- and software"@en .
 
@@ -130,8 +131,8 @@ fl:O4 rdf:type owl:NamedIndividual ,
 ###  https://triplydb.com/ColinMeerveld/fablab#O5
 fl:O5 rdf:type owl:NamedIndividual ,
                fl:Outcome ;
-      fl:hasApplication fl:Use_DuckDuckGo_as_search_engine ,
-                        fl:Use_Masterdon_for_social_networking ;
+      fl:hasApplication fl:u10 ,
+                        fl:u14 ;
       fl:isAssociatedWith fl:privacy ;
       rdfs:label "Members make use of privacy friendly digital services"@en .
 
@@ -139,8 +140,8 @@ fl:O5 rdf:type owl:NamedIndividual ,
 ###  https://triplydb.com/ColinMeerveld/fablab#O6
 fl:O6 rdf:type owl:NamedIndividual ,
                fl:Outcome ;
-      fl:hasApplication fl:Use_PGP_email_encryption ,
-                        fl:Use_bitwarden_as_password_manager ;
+      fl:hasApplication fl:u19 ,
+                        fl:u8 ;
       fl:isAssociatedWith fl:security ;
       rdfs:label "Members make use of services that protect their personal data"@en .
 
@@ -148,8 +149,8 @@ fl:O6 rdf:type owl:NamedIndividual ,
 ###  https://triplydb.com/ColinMeerveld/fablab#O7
 fl:O7 rdf:type owl:NamedIndividual ,
                fl:Outcome ;
-      fl:hasApplication fl:Use_Cardano_as_crypto_currency ,
-                        fl:Use_Posteo_as_email_provider ;
+      fl:hasApplication fl:u20 ,
+                        fl:u9 ;
       fl:isAssociatedWith fl:sustainability ;
       rdfs:label "Members make use of sustainable service providers"@en .
 
@@ -157,12 +158,12 @@ fl:O7 rdf:type owl:NamedIndividual ,
 ###  https://triplydb.com/ColinMeerveld/fablab#O8
 fl:O8 rdf:type owl:NamedIndividual ,
                fl:Outcome ;
-      fl:hasApplication fl:Read_public_stack ,
-                        fl:Understand_teh_phrase_Public_money_Public_code ,
-                        fl:Understand_the_4_types_of_freedoms_by_reading_the_GNU_principles ,
-                        fl:Understand_what_an_open_file_format_means_by_reading_the_open_data_handbook ,
-                        fl:Understand_what_open_source_means_by_reading_opensource.org ,
-                        fl:Watch_Bert_Huberts_talk_on_digital_autonomy ;
+      fl:hasApplication fl:u1 ,
+                        fl:u2 ,
+                        fl:u3 ,
+                        fl:u4 ,
+                        fl:u5 ,
+                        fl:u6 ;
       fl:isAssociatedWith fl:independency ;
       rdfs:label "Members understand the downside of digital reliance"@en .
 
@@ -217,144 +218,6 @@ fl:P5 rdf:type owl:NamedIndividual ,
       rdfs:seeAlso "https://www.digitaleoverheid.nl/wp-content/uploads/sites/8/2024/02/Geactualiseerde-werkagenda.pdf" .
 
 
-###  https://triplydb.com/ColinMeerveld/fablab#Read_public_stack
-fl:Read_public_stack rdf:type owl:NamedIndividual ,
-                              fl:Application ;
-                     rdfs:label "Understand the public stack by reading publickstack.net"@en ;
-                     rdfs:seeAlso "https://publicstack.net/" .
-
-
-###  https://triplydb.com/ColinMeerveld/fablab#Share_documents_in_OpenDocument_format
-fl:Share_documents_in_OpenDocument_format rdf:type owl:NamedIndividual ,
-                                                   fl:Application ;
-                                          rdfs:label "Use OpenDocument for office applications"@en .
-
-
-###  https://triplydb.com/ColinMeerveld/fablab#Understand_teh_phrase_Public_money_Public_code
-fl:Understand_teh_phrase_Public_money_Public_code rdf:type owl:NamedIndividual ,
-                                                           fl:Application ;
-                                                  rdfs:label "Understand the phrase 'public money public code' by reading publiccode.eu"@en ;
-                                                  rdfs:seeAlso "https://publiccode.eu" .
-
-
-###  https://triplydb.com/ColinMeerveld/fablab#Understand_the_4_types_of_freedoms_by_reading_the_GNU_principles
-fl:Understand_the_4_types_of_freedoms_by_reading_the_GNU_principles rdf:type owl:NamedIndividual ,
-                                                                             fl:Application ;
-                                                                    rdfs:label "Understand the 4 types of software freedoms by reading the GNU principles"@en ;
-                                                                    rdfs:seeAlso "https://www.gnu.org/philosophy/free-sw.en.html#four-freedoms" .
-
-
-###  https://triplydb.com/ColinMeerveld/fablab#Understand_what_an_open_file_format_means_by_reading_the_open_data_handbook
-fl:Understand_what_an_open_file_format_means_by_reading_the_open_data_handbook rdf:type owl:NamedIndividual ,
-                                                                                        fl:Application ;
-                                                                               rdfs:label "Understand what an open data means by reading the open data handbook"@en ;
-                                                                               rdfs:seeAlso "https://opendatahandbook.org/glossary/en/terms/open-format/"@en .
-
-
-###  https://triplydb.com/ColinMeerveld/fablab#Understand_what_open_source_means_by_reading_opensource.org
-fl:Understand_what_open_source_means_by_reading_opensource.org rdf:type owl:NamedIndividual ,
-                                                                        fl:Application ;
-                                                               rdfs:label "Understand what open source means by reading opensource.org"@en ;
-                                                               rdfs:seeAlso "https://opensource.org/osd" .
-
-
-###  https://triplydb.com/ColinMeerveld/fablab#Use_Cardano_as_crypto_currency
-fl:Use_Cardano_as_crypto_currency rdf:type owl:NamedIndividual ,
-                                           fl:Application ;
-                                  fl:icon "https://triplydb.com/ColinMeerveld/fablab/assets/67a9dbf6edcb361fb29d445d" ;
-                                  rdfs:label "Use Cardano as crypto currency"@en .
-
-
-###  https://triplydb.com/ColinMeerveld/fablab#Use_DuckDuckGo_as_search_engine
-fl:Use_DuckDuckGo_as_search_engine rdf:type owl:NamedIndividual ,
-                                            fl:Application ;
-                                   fl:icon "https://triplydb.com/ColinMeerveld/fablab/assets/67a9dc41edcb361fb29d693e" ;
-                                   rdfs:label "Use DuckDuckGo as search engine"@en .
-
-
-###  https://triplydb.com/ColinMeerveld/fablab#Use_Element_for_messaging
-fl:Use_Element_for_messaging rdf:type owl:NamedIndividual ,
-                                      fl:Application ;
-                             rdfs:label "Use Element for messaging"@en .
-
-
-###  https://triplydb.com/ColinMeerveld/fablab#Use_GIT_to_report_an_issue
-fl:Use_GIT_to_report_an_issue rdf:type owl:NamedIndividual ,
-                                       fl:Application ;
-                              rdfs:label "Use Git to report an issue"@en .
-
-
-###  https://triplydb.com/ColinMeerveld/fablab#Use_Git_to_issue_a_feature_request
-fl:Use_Git_to_issue_a_feature_request rdf:type owl:NamedIndividual ,
-                                               fl:Application ;
-                                      fl:icon "https://triplydb.com/ColinMeerveld/fablab/assets/67a9dcd0edcb361fb29db20d" ;
-                                      rdfs:label "Use Git to issue a feature request"@en .
-
-
-###  https://triplydb.com/ColinMeerveld/fablab#Use_LibreOffice_for_office_work
-fl:Use_LibreOffice_for_office_work rdf:type owl:NamedIndividual ,
-                                            fl:Application ;
-                                   rdfs:label "Use LibreOffice for office work"@en .
-
-
-###  https://triplydb.com/ColinMeerveld/fablab#Use_Masterdon_for_social_networking
-fl:Use_Masterdon_for_social_networking rdf:type owl:NamedIndividual ,
-                                                fl:Application ;
-                                       fl:icon "https://triplydb.com/ColinMeerveld/fablab/assets/67a9dcfeedcb361fb29dc7cf" ;
-                                       rdfs:label "Use Masterdon for social networking"@en .
-
-
-###  https://triplydb.com/ColinMeerveld/fablab#Use_OsmAnd_for_navigation
-fl:Use_OsmAnd_for_navigation rdf:type owl:NamedIndividual ,
-                                      fl:Application ;
-                             rdfs:label "Use OsmAnd for navigation" .
-
-
-###  https://triplydb.com/ColinMeerveld/fablab#Use_PGP_email_encryption
-fl:Use_PGP_email_encryption rdf:type owl:NamedIndividual ,
-                                     fl:Application ;
-                            rdfs:label "Use PGP email encryption" .
-
-
-###  https://triplydb.com/ColinMeerveld/fablab#Use_Posteo_as_email_provider
-fl:Use_Posteo_as_email_provider rdf:type owl:NamedIndividual ,
-                                         fl:Application ;
-                                fl:icon "https://triplydb.com/ColinMeerveld/fablab/assets/67a9dd2eedcb361fb29dde5f" ;
-                                rdfs:label "Use Posteo as email provider"@en .
-
-
-###  https://triplydb.com/ColinMeerveld/fablab#Use_bitwarden_as_password_manager
-fl:Use_bitwarden_as_password_manager rdf:type owl:NamedIndividual ,
-                                              fl:Application ;
-                                     fl:icon "https://triplydb.com/ColinMeerveld/fablab/assets/67a9dd99edcb361fb29e0a90" ;
-                                     rdfs:label "Use Bitwarden as password manager"@en .
-
-
-###  https://triplydb.com/ColinMeerveld/fablab#Use_f-droid_as_app_store_for_android
-fl:Use_f-droid_as_app_store_for_android rdf:type owl:NamedIndividual ,
-                                                 fl:Application ;
-                                        rdfs:label "Use f-droid as app store for android"@en .
-
-
-###  https://triplydb.com/ColinMeerveld/fablab#Use_nextcloud_as_cloud_storage_service
-fl:Use_nextcloud_as_cloud_storage_service rdf:type owl:NamedIndividual ,
-                                                   fl:Application ;
-                                          rdfs:label "Use Nextcloud as cloud storage service"@en .
-
-
-###  https://triplydb.com/ColinMeerveld/fablab#Use_openstreetmaps_for_map_viewing
-fl:Use_openstreetmaps_for_map_viewing rdf:type owl:NamedIndividual ,
-                                               fl:Application ;
-                                      rdfs:label "Use Openstreetmaps for map viewing"@en .
-
-
-###  https://triplydb.com/ColinMeerveld/fablab#Watch_Bert_Huberts_talk_on_digital_autonomy
-fl:Watch_Bert_Huberts_talk_on_digital_autonomy rdf:type owl:NamedIndividual ,
-                                                        fl:Application ;
-                                               rdfs:label "Understand 'digital autonomy' by watching Berts Huberts talks"@en ;
-                                               rdfs:seeAlso "https://conference.publicspaces.net/session/digital-autonomy" .
-
-
 ###  https://triplydb.com/ColinMeerveld/fablab#independency
 fl:independency rdf:type owl:NamedIndividual ,
                          fl:Value ;
@@ -365,13 +228,6 @@ fl:independency rdf:type owl:NamedIndividual ,
 fl:involvement rdf:type owl:NamedIndividual ,
                         fl:Value ;
                rdfs:label "Involvement"@en .
-
-
-###  https://triplydb.com/ColinMeerveld/fablab#linux_as_os
-fl:linux_as_os rdf:type owl:NamedIndividual ,
-                        fl:Application ;
-               fl:icon "https://triplydb.com/ColinMeerveld/fablab/assets/67a9dd5aedcb361fb29df021" ;
-               rdfs:label "Use Ubuntu as operating system"@en .
 
 
 ###  https://triplydb.com/ColinMeerveld/fablab#non-discrimination
@@ -396,6 +252,151 @@ fl:security rdf:type owl:NamedIndividual ,
 fl:sustainability rdf:type owl:NamedIndividual ,
                            fl:Value ;
                   rdfs:label "Sustainability"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#u1
+fl:u1 rdf:type owl:NamedIndividual ,
+               fl:Application ;
+      rdfs:label "Understand 'digital autonomy' by watching Berts Huberts talks"@en ;
+      rdfs:seeAlso "https://conference.publicspaces.net/session/digital-autonomy" .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#u10
+fl:u10 rdf:type owl:NamedIndividual ,
+                fl:Application ;
+       fl:icon "https://triplydb.com/ColinMeerveld/fablab/assets/67a9dc41edcb361fb29d693e" ;
+       rdfs:label "Use DuckDuckGo as search engine"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#u11
+fl:u11 rdf:type owl:NamedIndividual ,
+                fl:Application ;
+       rdfs:label "Use Element for messaging"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#u12
+fl:u12 rdf:type owl:NamedIndividual ,
+                fl:Application ;
+       fl:icon "https://triplydb.com/ColinMeerveld/fablab/assets/67a9dcd0edcb361fb29db20d" ;
+       rdfs:label "Use f-droid as app store for android"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#u13
+fl:u13 rdf:type owl:NamedIndividual ,
+                fl:Application ;
+       rdfs:label "Use Git to report an issue"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#u14
+fl:u14 rdf:type owl:NamedIndividual ,
+                fl:Application ;
+       fl:icon "https://triplydb.com/ColinMeerveld/fablab/assets/67a9dcfeedcb361fb29dc7cf" ;
+       rdfs:label "Use Masterdon for social networking"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#u15
+fl:u15 rdf:type owl:NamedIndividual ,
+                fl:Application ;
+       rdfs:label "Use Nextcloud as cloud storage service"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#u16
+fl:u16 rdf:type owl:NamedIndividual ,
+                fl:Application ;
+       rdfs:label "Use OpenDocument for office applications"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#u17
+fl:u17 rdf:type owl:NamedIndividual ,
+                fl:Application ;
+       rdfs:label "Use Openstreetmaps for map viewing"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#u18
+fl:u18 rdf:type owl:NamedIndividual ,
+                fl:Application ;
+       rdfs:label "Use OsmAnd for navigation" .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#u19
+fl:u19 rdf:type owl:NamedIndividual ,
+                fl:Application ;
+       rdfs:label "Use PGP email encryption" .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#u2
+fl:u2 rdf:type owl:NamedIndividual ,
+               fl:Application ;
+      rdfs:label "Understand the 4 types of software freedoms by reading the GNU principles"@en ;
+      rdfs:seeAlso "https://www.gnu.org/philosophy/free-sw.en.html#four-freedoms" .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#u20
+fl:u20 rdf:type owl:NamedIndividual ,
+                fl:Application ;
+       fl:icon "https://triplydb.com/ColinMeerveld/fablab/assets/67a9dd2eedcb361fb29dde5f" ;
+       rdfs:label "Use Posteo as email provider"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#u21
+fl:u21 rdf:type owl:NamedIndividual ,
+                fl:Application ;
+       fl:icon "https://triplydb.com/ColinMeerveld/fablab/assets/67a9dd5aedcb361fb29df021" ;
+       rdfs:label "Use Ubuntu as operating system"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#u22
+fl:u22 rdf:type owl:NamedIndividual ,
+                fl:Application ;
+       rdfs:label "Use Git to issue a feature request"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#u23
+fl:u23 rdf:type owl:NamedIndividual ,
+                fl:Application ;
+       rdfs:label "Use LibreOffice for office work"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#u3
+fl:u3 rdf:type owl:NamedIndividual ,
+               fl:Application ;
+      rdfs:label "Understand the phrase 'public money public code' by reading publiccode.eu"@en ;
+      rdfs:seeAlso "https://publiccode.eu" .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#u4
+fl:u4 rdf:type owl:NamedIndividual ,
+               fl:Application ;
+      rdfs:label "Understand the public stack by reading publickstack.net"@en ;
+      rdfs:seeAlso "https://publicstack.net/" .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#u5
+fl:u5 rdf:type owl:NamedIndividual ,
+               fl:Application ;
+      rdfs:label "Understand what an open data means by reading the open data handbook"@en ;
+      rdfs:seeAlso "https://opendatahandbook.org/glossary/en/terms/open-format/"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#u6
+fl:u6 rdf:type owl:NamedIndividual ,
+               fl:Application ;
+      rdfs:label "Understand what open source means by reading opensource.org"@en ;
+      rdfs:seeAlso "https://opensource.org/osd" .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#u8
+fl:u8 rdf:type owl:NamedIndividual ,
+               fl:Application ;
+      fl:icon "https://triplydb.com/ColinMeerveld/fablab/assets/67a9dd99edcb361fb29e0a90" ;
+      rdfs:label "Use Bitwarden as password manager"@en .
+
+
+###  https://triplydb.com/ColinMeerveld/fablab#u9
+fl:u9 rdf:type owl:NamedIndividual ,
+               fl:Application ;
+      fl:icon "https://triplydb.com/ColinMeerveld/fablab/assets/67a9dbf6edcb361fb29d445d" ;
+      rdfs:label "Use Cardano as crypto currency"@en .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
